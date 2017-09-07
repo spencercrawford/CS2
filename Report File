@@ -1,0 +1,21 @@
+Spencer Crawford
+HomeWork #1 CS2015-001
+
+All User Logins:
+
+
+Login: Spencer!7 (Valid)
+
+Login: spence (Invalid)
+Please include least one uppercase letter
+Please include at least one of the following: ! @ # $
+Please include at least one numerical digit
+
+Login: Happy#@!888 (Valid)
+
+Login: go_t (Invalid)
+Please include least one uppercase letter
+Please include at least five characters
+Please include at least one of the following: ! @ # $
+Please include at least one numerical digit
+You have included an invalid character
