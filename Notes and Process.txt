@@ -1,0 +1,87 @@
+Programmer  : Spencer Crawford
+Project     : Homework #1
+Date        : 9/2/17
+Description : Documentation and Planning for Homework #1
+
+Notes and Process:
+
+Step 1)
+
+Login Specification:
+ - 1 uppercase letter
+ - 1 lowercase letter
+ - 1 numerical digit
+ - 1 of the following: ! @ # $
+ - length must be at least 5 characters
+ - space / tab are not permitted 
+
+Input/Output
+ - program reads string from user
+ - output could be the following:
+
+Login: Example!17 (Valid)
+
+or perhaps
+
+Login: No0 (Invalid)
+—— Needs Special Character (!@#$)
+—— Too Short (Minimum of 5 Characters)
+
+Program needs the following methods:
+ - main
+ - greetUser (brief explanation / prompt)
+ - checkCase
+ - checkLength
+ - checkValidity
+ - PrintUser LoginValidity
+ - addToReport (concatenates result checking UserLogin to report variable.)
+ - printReport (to file)
+
+Step 2)
+
+greetUser method:
+ - welcome and prompt user
+ - call the readUserLoginFromUser method:
+
+readUserLoginFromUser Method:
+- once the user has entered input, call checkCase method
+	~ need a scanner (System.in)
+	~ maybe .hasNext()
+
+checkCase method:
+ - search the input for uppercase and lowercase letters
+	~  maybe charAt(0) through charAt(length)
+ - if the input is ok, return YES boolean, otherwise NO boolean
+ - call checkLength method
+
+checkLength method:
+ - search the input for a length of 5 characters or more
+	~ maybe .length
+ - if the input is ok, return YES boolean, otherwise NO boolean
+ - call checkValidity method
+
+checkValidity Method:
+ - search the input for special characters, namely ! @ # $
+ - check for improper special characters, namely % ^ & * etc.
+ - check for space or tab input
+ - check status of checkCase and checkLength booleans
+ - if input is ok, return YES boolean, otherwise return NO boolean
+ - call printUserLoginValidity method
+
+printUserLoginValidity method:
+ - check all booleans for input validity
+ - if input is ok, print Login: + input + (Valid)
+ - if input is not ok, print Login: + input + (Invalid)
+ - print reasons why login is invalid based on boolean results
+
+Development Process and Review:
+
+Throughout the course of coding this project, I ran into a couple issues. The first was that I occasionally forgot that one cannot call a non-static variable from a static context (in this case the main method). After attempting several round-about ways to supersede this issue, I eventually decided to copy and paste my code from the main method into a constructor for the class UserLogin. I then simply called a new UserLogin from the main method, directing all further instructions to the constructor. This approach seemed to work well, so I decided to keep it.
+
+Another issue that I discovered, (which actually frustrated me to no end) was that my output in IntelliJ was different than the output in my file. Only the first UserLogin data was showing up in the file! After a little while of scratching my head, I noticed that I had place my statement to close the PrintWriter for my file in the wrong place! Needless to say, I felt like an idiot.
+
+Lastly, I had the most difficult time attempting to figure out how to catch an invalid special character in my user input (one that is not ! @ # $). I created a string with the valid characters in it, and created a nested for loop to compare each character of the string with the characters of the user input. For some reason it simply wouldn’t work! After way too long struggling with it, I emailed you about my issue.
+
+After emailing you, I remembered something about a Pattern class that I used last semester. I was able to get the patten compiled without too much trouble once I remembered, but I forgot that it also needs Matcher class in order to search the pattern! I sat scratching my head for some time before I finally figured it out. Whew!
+
+Overall, this assignment was a great review of java, and really got my head back in the game for this semester. I had spent too much time on linux over the summer, and not enough time staying up on my java. I believe that I spent more than a normal amount of time on this project, and I sincerely hope that I will be able to figure out HomeWork #2 in less time. I do not feel that I was as prepared as I should have been. Note to self: continue to study programming over the summer!
