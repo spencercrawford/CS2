@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -9,7 +11,6 @@ public class UserLogin {
     private PrintWriter printToFile = new PrintWriter(reportFile);          // print writer for file
     private String inputString;                                             // string for user input
     private String report;                                                  // string for user input
-    private String allCharString  = "!@#$1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"; // all valid
     private boolean upperCase = false; // determines inclusion of uppercase letters
     private boolean lowerCase = false; // determines inclusion of lowercase letters
     private boolean hasLength = false; // determines length of five characters
@@ -84,7 +85,9 @@ public class UserLogin {
         hasSpace = false;
         if (inputString.length() >= 5) {
             hasLength = true;
-        } // end if
+        } else {
+            hasLength = false;
+        }
     } // end checkLength
 
     private void checkSpecialCharacter() {
@@ -107,14 +110,13 @@ public class UserLogin {
 
     private void checkOtherInvalidCharacter() {
         otherChar = true;
-        // this method determines the inclusion of invalid characters such as: % ^ & *
-        for (int i = 0; i < inputString.length(); i++) {
-            for (int j = 0; j < allCharString.length(); j++) {
-                if (!(inputString.charAt(i) == allCharString.charAt(j))) {
-                    otherChar = false;
-                } // end if
-            } // end for
-        } // end for
+        Pattern pattern = Pattern.compile("^[a-zA-Z0-9!@#$]+$");
+        Matcher matcher = pattern.matcher(inputString); // Your String should come here
+        if(!matcher.find()) {
+            otherChar = true;
+        } else {
+            otherChar = false;
+        }
     } // end checkOtherInvalidCharacter
 
     private void checkSpace() {
