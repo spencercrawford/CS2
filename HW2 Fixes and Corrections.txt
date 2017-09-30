@@ -1,0 +1,6 @@
+Homework #2 Fixes and Corrections
+
+Fixing the hard-coding:
+	So I needed to find a way to avoid hard-coding the borders for each country. I decided that the best method would be to create an index of each country’s borders by assigning an index number to each country. I accomplished this by parsing the index of each country and the indexing number of each country into a String using the Integer.toString() method, and then compared the two strings to see if a country’s border index contained another country’s index number. It took a little while, but eventually I got everything to work. Yay!
+
+	My next task was to get rid of the hard-coding for the number of countries, which ultimately determined the size of the array used for later code. I first tried to create a new BufferedReader and a new FileReader for the file to determine the number of lines (one country per line), but I couldn’t get that to work. I tried closing the BufferedReader, but my subsequent scanner for the same file would always give me a NullPointerException. I ended up solving this predicament by creating a copy of my data file, and reading the number of lines in the copy.
