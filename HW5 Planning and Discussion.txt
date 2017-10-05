@@ -1,0 +1,26 @@
+Project     : Homework #5
+Programmer  : Spencer Crawford
+Date        : 10/2/17
+Description : Creates a sorted list of words and the displays the number of times each word occurs.
+
+Planning and process:
+
+Step 1)
+	Create a list of words based on the words in the source file
+
+Step 2)
+	Remove all special characters from the list
+
+Step 3)
+	Count all duplicates in the list and store them in another list
+
+Step 4)
+	Search array for duplicates and remove them. clock the wall clock and cpu times of these operations
+
+Step 5)
+	Print out the results
+
+Discussion:
+	I ran into a couple of issues while attempting to remove the special characters from the list. The method I used does not seem to support removing characters from a collection. To solve this problem, I copied the list into an array, and then removed the special characters. I then later converted the string array back into a collection.
+	Next, I tried a couple of different methods to find the number of duplicates, all gave me outrageous access times. I finally discovered Collections.frequency, and was amazing at how much faster the operation was completed!
+	Lastly, I spent a bit of time altering the loop I used for the removeDuplicates method, since several attempts cut out the very last index of my list. I ended up solving the issue however.
