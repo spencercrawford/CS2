@@ -1,0 +1,114 @@
+Programmer  : Spencer Crawford
+Project     : Homework #4
+Date        : 9/17/17
+Description : Test time and two sorts, BubbleSort and the built-in Java sort.
+
+Planning and Process:
+
+Step 1)
+	- Plan the requirements for each class and method
+
+Prompt User Method:
+	- ask user to enter the file name
+	- going to need the data file (obviously)
+	- going to need a scanner for the input (System.in)
+	- going to need an exception (FileNotFoundException)
+	
+Bubble Sort Method:
+	- I’ll come back to this later
+	- going to need an array of items to sort
+
+Create Array Method:
+	- going to need an array. Probably going to use ArrayList
+	- need to filter out special characters (Maybe regex)
+	- duplicate the file (use Bubble sort on the first file)
+
+Java Sort Method
+	- use this on the second file
+
+Wall Clock Method:
+	- use Current Time Mills for this one
+
+CPU Time Method:
+	- Use Nano Time for this one
+
+Print Results Method:
+	- Print out the file name
+	- print out the number of words (no duplicates)
+	- print out the sort times for wall clock
+	- print out the sort times for CPU time
+
+Step 2)
+	- Create empty shells for each method
+
+Step 3)
+	- write the code for the prompt user method
+
+Step 4)
+	- write the code for the print results method,
+	  but only for the file name
+	- test to see if everything works so far
+
+Step 5)
+	- write the code for the create array method (on paper first)
+	- going to need a scanner for the file
+
+Step 6)
+	- write the code for the two sorting methods (on paper first)
+
+Step 7)
+	- write the code for the number of words in the print results method
+	- test to see if everything works so far
+	- for testing purposes, print out the contents of the array
+
+Step 8)
+	- write the code for the wall clock method (on paper first)
+
+step 9)
+	- write the code for the CPU time method (on paper first)
+
+Step 10)
+	- write the code for the wall clock and CPU time output in the print results method
+	- test to see if everything works
+
+Step 11)
+	- debug debug debug
+
+Discussion For Each Step:
+
+Step 1)
+	Written above.
+
+Step 2)
+	Went off without a hitch. (one would hope)
+
+Step 3)
+	Went off without a hitch.
+
+Step 4)
+	Went off without a hitch
+
+Step 5)
+	Instead of a scanner to read the file, I ended up deciding with a buffered reader and file reader. Thought it would be easier. Anyway, everything went smoothly.
+
+Step 6)
+	Holy crap, bubble sort is slow! I ended up scrapping the buffered reader and the file reader for the file, simply using a scanner ended up working better for the purpose of filling the array with the words from the file. Writing the bubble sort method was pretty easy, and obviously the java sort method contains only one line of code, so I’m pretty pleased with how that went. However, i’m amazing at how much LONGER bubble sort takes to do the same job!
+
+Step 7)
+	For this, I ended up simply using the length of the array for the number of words.
+
+Step 8)
+	So after a little bit more research on CurrentTimeMillis and nanoTime, I realized I should include the code for starting and ending times in the sorting methods, so that is what I have done. That took a lot less code than I thought it was going to!
+
+Step 9)
+	Covered in step 8.
+
+Step 10)
+	Went off without a hitch.
+
+Step 11) 
+
+Discussion:
+
+	While debugging, I ran into far fewer issues this time. I really didn’t have to change essential code at all, I simply changed a few output issues, like differentiating between milliseconds and nanoseconds for the wall clock and cpu times. I also, forgot to create a duplicate of the array and test each sort separately, so I appended that aspect near the completion of the project. However, the whole process went so much more smoothly this time. I think that is because I was so much more methodical in testing each step one by one as I created the project, it really made a difference.
+	
