@@ -1,0 +1,41 @@
+Last login: Wed Oct 18 12:21:30 on ttys000
+Spencers-MacBook-Air:~ Spencer$ cd HW6
+Spencers-MacBook-Air:HW6 Spencer$ cd src
+Spencers-MacBook-Air:src Spencer$ javac HW6.java
+Spencers-MacBook-Air:src Spencer$ java HW6
+Please enter the SIZE
+1000
+Please enter the BIG
+4000
+Please choose the Data Type:
+1 = Integer
+2 = double
+3 = String
+3
+SIZE: 1000 BIG: 4000
+Wall Clock:
+Java Sort: 10ms
+Merge Sort: 5ms
+
+CPU Time:
+Java Sort: 9507593ns
+Merge Sort: 4880638ns
+Spencers-MacBook-Air:src Spencer$ java HW6
+Please enter the SIZE
+1000000
+Please enter the BIG
+50000000
+Please choose the Data Type:
+1 = Integer
+2 = double
+3 = String
+3
+SIZE: 1000000 BIG: 50000000
+Wall Clock:
+Java Sort: 1308ms
+Merge Sort: 1020ms
+
+CPU Time:
+Java Sort: 1308190166ns
+Merge Sort: 1020372671ns
+Spencers-MacBook-Air:src Spencer$ 

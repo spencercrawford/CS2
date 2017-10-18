@@ -1,0 +1,40 @@
+/* Project : Homework #6
+ * Programmer : Spencer Crawford
+ * Date : 10/19/17
+ * Description : tests practical applications of Merge Sort.
+ */
+
+Planning and Process:
+
+ Step 1 : Plan methods
+
+ Prompt User)
+	- two ints (for both SIZE and BIG)
+	- make sure input is numerical
+	- make sure BIG is larger than SIZE
+	- ask user for data type, int to store choice
+	- switch statement to direct user choice
+	- only create arrays of chosen data type
+
+ Create Arrays)
+	- use Math.random for ints and doubles
+	- user Random() for Strings
+	- need a string of all valid characters
+	- use Arrays.copyOf to duplicate all arrays
+
+ Sort and Test)
+	- only sort arrays of chosen data type
+	- use CurrentTimeMillis and nanoTime
+
+ Print Results)
+	- print off timing
+
+ Step 2 : create merge sort class (for each data type?)
+
+ Step 3 : write methods in HW6 class. test each after completion.
+
+ Step 4 : debug debug debug
+
+Discussion:
+	So the first issue that I ran into was attempting to create a merge sort class that would work for any data type, without having to use duplicate code. My thought was to create a generic data type, and then covert the primitives to be sorted into this generic data type. Sadly, I’m not finished with it yet. The program submitted contains methods to sort and merge based on the data type, and my most recent attempt commented out at the bottom of the class. I’ll hopefully be done with it soon.
+	Besides the merge sort thing, the only other comment I would like to make is pertaining to the commented out random String generator in the HW6 class. The assignment specified to write my own, so that is what I did. However, I really like the Apache RandomStringUtils way better, and tried it out just for fun. One of the things that I really like about it is that one is not limited to just alpha-numeric characters. It can generate characters in every language, including Chinese Kanzi and Sanskrit. It’s really fun. For the purpose of the program I set the index to english letters and numbers, but I also toyed around with sorted other languages. 
