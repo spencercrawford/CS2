@@ -1,0 +1,47 @@
+Last login: Fri Nov  3 14:19:26 on ttys000
+Spencers-MacBook-Air:~ Spencer$ cd HW7_Part2
+Spencers-MacBook-Air:HW7_Part2 Spencer$ cd src
+Spencers-MacBook-Air:src Spencer$ java HW7
+Please enter the name of the file
+HW7.txt
+The number of unique words in the file is: 11105
+
+What would you like to do?
+1 - Find the index of a particular word
+2 - Find the word for a particular index
+3 - Print the entire contents of the Hash Table
+4 - Exit the program
+2
+Which index would you like to see the contents of?
+1
+Index #1 contains the word: 'doctor
+Would you like to continue? Y / N
+y
+Which index would you like to see the contents of?
+2
+Index #2 contains the word: 'em
+Would you like to continue? Y / N
+y
+Which index would you like to see the contents of?
+3
+Index #3 contains the word: 'how
+Would you like to continue? Y / N
+y
+Which index would you like to see the contents of?
+4
+Index #4 contains the word: 'i
+Would you like to continue? Y / N
+y
+Which index would you like to see the contents of?
+5
+Index #5 contains the word: 'nation
+Would you like to continue? Y / N
+n
+
+What would you like to do?
+1 - Find the index of a particular word
+2 - Find the word for a particular index
+3 - Print the entire contents of the Hash Table
+4 - Exit the program
+4
+Spencers-MacBook-Air:src Spencer$ 

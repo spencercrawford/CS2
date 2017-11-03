@@ -1,0 +1,20 @@
+Project          : HW7 (Part 2)
+Programmer : Spencer Crawford
+Date             : 11/3/17
+Description   : Implement a Hash Table to index and search for words in a file
+
+Planning:
+
+Step 1)
+	Create list of individual words like in part 1
+Step 2)
+	Create a HashTable using the Java class
+Step 3)
+	Create methods to search for words and index
+Step 4)
+	Debug debug debug
+
+Discussion
+
+	This part of the program proved much simpler, though I like the results much less. I really liked the manner in which chaining lays out the data of a Hash Table, and from looking at the results of using the Java class, it appears that linear probing is used. I can see how with much smaller sets of data, this method would be much more useful though, since there is the ease of implementation factor. Again what I probably spent the most time on, was error detection. I am attempting to stay away from try / catch blocks when possible, and creating a program that relies on lots of user input has lots of possible instances of input errors.
+	Overall, I liked using the Java HashTable, but I will likely be creating my own from the template in part 1 in the future.
