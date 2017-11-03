@@ -1,0 +1,56 @@
+Last login: Wed Nov  1 16:03:41 on ttys000
+Spencers-MacBook-Air:~ Spencer$ cd HW7
+Spencers-MacBook-Air:HW7 Spencer$ cd src
+Spencers-MacBook-Air:src Spencer$ java HW7
+Please enter the name of the file
+HW7.txt
+The number of unique words in the file is: 11105
+Please enter a prime number for the hash table size
+1100
+the number you chose was not prime
+1103 was used instead
+
+What would you like to do?
+1 - Find the index and bucket of a particular word
+2 - Find the contents of a particular bucket
+3 - Print the entire contents of the Hash Table
+4 - Exit the program
+2
+Which bucket would you like to see the contents of?
+0
+Bucket 0 : constantly discovered' frequently hungerworn philosophy protesting questioner restraints 
+Would you like to continue? Y / N
+y
+Which bucket would you like to see the contents of?
+1
+Bucket 1 : countryman courtyards expression interviews multitudes oppressive reverently soothingly strikingly suspicions 
+Would you like to continue? Y / N
+y
+Which bucket would you like to see the contents of?
+2
+Bucket 2 : persistent resistless scornfully sensuality 
+Would you like to continue? Y / N
+y
+Which bucket would you like to see the contents of?
+3
+Bucket 3 : cautiously depository oppression petulantly postmaster profoundly shopwindow wrathfully 
+Would you like to continue? Y / N
+y
+Which bucket would you like to see the contents of?
+4
+Bucket 4 : assumption mustardpot smoothness 
+Would you like to continue? Y / N
+y
+Which bucket would you like to see the contents of?
+5
+Bucket 5 : countrymen opposition postilions reservoirs resolution unfruitful wiglorryof woodsawyer 
+Would you like to continue? Y / N
+n
+
+What would you like to do?
+1 - Find the index and bucket of a particular word
+2 - Find the contents of a particular bucket
+3 - Print the entire contents of the Hash Table
+4 - Exit the program
+4
+Spencers-MacBook-Air:src Spencer$ 

@@ -1,0 +1,23 @@
+Project          : HW7 (Part 1)
+Programmer : Spencer Crawford
+Date             : 11/3/17
+Description   : Implement a Hash Table to index and search for words in a file
+
+Planning
+
+Step 1)
+	Process file and generate number of unique words
+Step 2)
+	create Node class
+Step 3)
+	create Hash Table Class
+	Everything must be a function
+	create functions for prime numbers
+Step 4)
+	Implement Everything in HW7 class
+Step 5)
+	Debug debug debug
+
+Discussion
+	So the first thing I did was create the Node class, which I named LinkedHashEntry. There were no problems there. The Second thing that I did was create the Hash Table class. I struggled at first attempting to fully grasp the concept of a Hash Table, so I watched a few YouTube videos before I really wrote out my methods on paper. Once that was done, I started working on how to choose a prime number, and select the next highest prime number based on user input. Once the Hash Table class was done, I got down to implementing it in the HW7 class. Creating the Hash Table was easy, but what I spent most of my time on, was checking for errors in user input (making sure input is an int / not a string etc.).
+	Hash Tables are so cool! I really like how much it speeds up my access time to elements in the list, and am looking forward to using a hash table in my personal projects outside of school in the future!
